@@ -9,3 +9,4 @@ install:
 - chmod +x fuck-xuexiqiangguo/Fuck学习强国
 script:
 - xvfb-run --auto-servernum --server-num=1 fuck-xuexiqiangguo/Fuck学习强国 --headless
+1
