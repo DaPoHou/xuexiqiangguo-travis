@@ -8,5 +8,5 @@ install:
 - unzip -q -d ./fuck-xuexiqiangguo/ fuck-xuexiqiangguo.zip
 - chmod +x fuck-xuexiqiangguo/Fuck*
 script:
-- xvfb-run --auto-servernum --server-num=1 fuck-xuexiqiangguo/Fuck学习强国 --headless
+- xvfb-run --auto-servernum --server-num=1 fuck-xuexiqiangguo/Fuck* --headless
 
