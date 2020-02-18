@@ -4,7 +4,7 @@ sudo: false
 services:
 - xvfb
 install:
-- wget -O fuck-xuexiqiangguo.zip https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo/raw/master/Fuck学习强国-linux.zip
+- wget -O fuck-xuexiqiangguo.zip https://raw.githubusercontent.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo/master/Fuck%E5%AD%A6%E4%B9%A0%E5%BC%BA%E5%9B%BD-linux.zip
 - unzip -q -d ./fuck-xuexiqiangguo/ fuck-xuexiqiangguo.zip
 - chmod +x fuck-xuexiqiangguo/Fuck学习强国
 script:
