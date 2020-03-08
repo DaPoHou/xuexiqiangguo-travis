@@ -9,5 +9,5 @@ install:
 - chmod +x fuck-xuexiqiangguo/Fuck*
 - mv fuck-xuexiqiangguo/Fuck* fuck-xuexiqiangguo/Fuckxi
 script:
-- xvfb-run --auto-servernum --server-num=1 fuck-xuexiqiangguo/Fuckxi --headless
+- xvfb-run --auto-servernum --server-num=1 fuck-xuexiqiangguo/Fuckxi --headless --ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
 
