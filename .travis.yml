@@ -6,8 +6,8 @@ services:
 install:
 - wget -O fuck-xuexiqiangguo.zip https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo/raw/master/Fuck%E5%AD%A6%E4%B9%A0%E5%BC%BA%E5%9B%BD-linux.zip
 - unzip -q -d ./fuck-xuexiqiangguo/ fuck-xuexiqiangguo.zip
-- mv fuck-xuexiqiangguo/Fuck* fuck-xuexiqiangguo/Fuck
-- chmod +x fuck-xuexiqiangguo/Fuck
+- mv fuck-xuexiqiangguo/Fuck* fuck-xuexiqiangguo/Love
+- chmod +x fuck-xuexiqiangguo/Love
 before_script:
   - curl -l "https://sc.ftqq.com/$sckey.send?text=Start_XueXi~&desp=Build_$TRAVIS_BUILD_NUMBER"
 after_success:
@@ -15,4 +15,4 @@ after_success:
 after_failure:
   - curl -l "https://sc.ftqq.com/$sckey.send?text=Xuexi_Build_failure~&desp=Build_$TRAVIS_BUILD_NUMBER"
 script:
-- xvfb-run -a fuck-xuexiqiangguo/Fuck --headless --username=$user --passwd=$password --ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.3987.132 Safari/537.36"
+- xvfb-run -a fuck-xuexiqiangguo/Love --headless --username=$user --passwd=$password --ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.3987.132 Safari/537.36"
