@@ -7,7 +7,7 @@ services:
 before_install:
 - wget -O Dockerfile https://raw.githubusercontent.com/fuck-xuexiqiangguo/docker/master/Dockerfile
 - wget -O script.sh https://raw.githubusercontent.com/fuck-xuexiqiangguo/docker/master/script.sh
-- sed -i "s/--headless/--headless --username=$user --passwd=$password --ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.3987.132 Safari/537.36"/g" script.sh
+- sed -i "s/--headless/--headless --username=$user --passwd=$password/g" script.sh
 - docker build -t fuck-xuexiqiangguo-docker .
 - docker run -d --name xuexi fuck-xuexiqiangguo-docker
 - docker logs -f xuexi
