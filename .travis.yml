@@ -1,6 +1,7 @@
 language: c
 os: linux
 sudo: false
+dist: bionic
 services:
 - xvfb
 install:
