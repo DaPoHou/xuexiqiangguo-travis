@@ -9,6 +9,7 @@ before_install:
 - wget -O script.sh https://raw.githubusercontent.com/fuck-xuexiqiangguo/docker/master/script.sh
 - sed -i "s/--headless/--headless --username=$user --passwd=$password/g" script.sh
 - docker build -t fuck-xuexiqiangguo-docker .
+script:
 - docker run -d --name xuexi fuck-xuexiqiangguo-docker
 before_script:
   - curl -l "https://sc.ftqq.com/$sckey.send?text=Start_XueXi~&desp=Build_$TRAVIS_BUILD_NUMBER"
