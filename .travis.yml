@@ -16,4 +16,4 @@ after_success:
 after_failure:
   - curl -l "https://sc.ftqq.com/$sckey.send?text=Xuexi_Build_failure~&desp=Build_$TRAVIS_BUILD_NUMBER"
 script:
-- xvfb-run -a fuck-xuexiqiangguo/Love --headless --username=$user --passwd=$password --ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.3987.132 Safari/537.36"
+- xvfb-run -a fuck-xuexiqiangguo/Love --headless --ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.3987.132 Safari/537.36"
