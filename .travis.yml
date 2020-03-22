@@ -11,9 +11,9 @@ install:
 - unzip -q -d ./fuck-xuexiqiangguo/ fuck-xuexiqiangguo.zip
 - mv fuck-xuexiqiangguo/Fuck* fuck-xuexiqiangguo/Love
 - chmod +x fuck-xuexiqiangguo/Love
+- Xvfb -screen scrn 1280x2000x24 :9.0 
+- export DISPLAY=:9.0
 before_script:
-  - Xvfb -screen scrn 1280x2000x24 :9.0 
-  - export DISPLAY=:9.0
   - curl -l "https://sc.ftqq.com/$sckey.send?text=Start_XueXi~&desp=Build_$TRAVIS_BUILD_NUMBER"
 after_success:
   - curl -l "https://sc.ftqq.com/$sckey.send?text=Xuexi_Build_success~&desp=Build_$TRAVIS_BUILD_NUMBER"
