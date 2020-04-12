@@ -19,16 +19,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
-
     # Runs a set of commands using the runners shell
     - name: Installation depends
       run: |
-        sudo apt update
-        sudo apt upgrade
-        sudo apt-get install -y wget unzip libgtk-3-0 xvfb libxss1 libnss3 libasound2
+#        sudo apt update
+#        sudo apt upgrade
+#        sudo apt-get install -y wget unzip libgtk-3-0 xvfb libxss1 libnss3 libasound2
         Xvfb -ac -screen scrn 1280x2000x24 :9.0 & export DISPLAY=:9.0
     - name: Pull and Run
       run: |
@@ -36,4 +32,4 @@ jobs:
         unzip -q -d ./fuck-xuexiqiangguo/ fuck-xuexiqiangguo.zip
         cd fuck-xuexiqiangguo
         chmod +x ./Fuck学习强国
-        ./Fuck学习强国 --headless
+        xvfb-run ./Fuck学习强国 --headless --ua="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.3987.132 Safari/537.36"
